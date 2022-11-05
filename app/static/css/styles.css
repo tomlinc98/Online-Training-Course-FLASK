@@ -7,9 +7,7 @@ body{
 }
 
 .carousel-inner img {
-  -webkit-filter: grayscale(90%);
-  filter: grayscale(90%); /* make all photos black and white */
-  width: 100%; /* Set width to 100% */
+  width: 50%; /* Set width to 100% */
   margin: auto;
 }
 
@@ -68,3 +66,24 @@ body{
 .dropdown-menu li a:hover {
   background-color: red !important;
 } 
+
+.navbar {
+  font-family: Open Sans, sans-serif;
+}
+
+ /* Overwrite default styles of h3 and h4 */
+h3, h4 {
+  margin: 10px 0 30px 0;
+  font-size: 20px;
+  color: #111;
+}
+
+/* Remove rounded borders on input fields */
+.form-control {
+  border-radius: 0;
+}
+
+/* Disable the ability to resize textareas */
+textarea {
+  resize: none;
+} s
