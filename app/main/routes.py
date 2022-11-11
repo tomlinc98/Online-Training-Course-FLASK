@@ -13,3 +13,7 @@ def index(cat=None):
 def courses(cat=None):
     return render_template('courses.html',  title='Courses')
 
+@main.route('/about', methods=['GET', 'POST'])
+def about(cat=None):
+    return render_template('about.html',  title='About')
+
