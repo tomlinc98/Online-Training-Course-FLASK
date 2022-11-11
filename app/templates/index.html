@@ -2,168 +2,147 @@
 
 {% block app_content %}
 
-<!DOCTYPE html>
-<html lang="en">
+<!--carousel-->
+<div class="banner carousel slide" id="recommended-item-carousel" data-ride="carousel">
+    <div class="slides carousel-inner">
+      <div class="item active">
+        <img src="{{url_for('static', filename='home/slider/slider_image_1.jpg')}}" alt="" />
+        <div class="banner_caption">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="caption_inner animated fadeInUp">
+                  <h1>Welcome To Scrum Jet</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consectetur ante volutpat sem aliquam lobortis. Mauris porta fermentum volutpat. Praesent est sapien, tincidunt vel arcu vitae, mattis sollicitudin lectus.</p>
+                  <!-- insert_about_page_here -->                  
+                  <!--<a href="about.html">Learn More</a> -->
+                </div><!--end caption_inner-->
+              </div>
+            </div><!--end row-->
+          </div><!--end container-->
+        </div><!--end banner_caption-->
+      </div>
+      <div class="item">
+        <img src="{{url_for('static', filename='home/slider/slider_image_2.jpg')}}" alt="" />
+        <div class="banner_caption">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="caption_inner animated fadeInUp">
+                  <h1>Admission going on</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consectetur ante volutpat sem aliquam lobortis. Mauris porta fermentum volutpat. Praesent est sapien, tincidunt vel arcu vitae, mattis sollicitudin lectus.</p>
+                  <!-- insert_apply_page_here -->                     
+                  <a href="apply.html">Apply Now</a>
+                </div><!--end caption_inner-->
+              </div>
+            </div><!--end row-->
+          </div><!--end container-->
+        </div><!--end banner_caption-->
+      </div>
+      <div class="item">
+        <img src="{{url_for('static', filename='home/slider/slider_image_3.jpg')}}" alt="" />
+        <div class="banner_caption">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="caption_inner animated fadeInUp">
+                  <h1>Arrange a tour to our college</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consectetur ante volutpat sem aliquam lobortis. Mauris porta fermentum volutpat. Praesent est sapien, tincidunt vel arcu vitae, mattis sollicitudin lectus.</p>
+                  <!-- insert_contact_page_here -->                     
+                  <a href="contact-us.html">Contact Us</a>
+                </div><!--end caption_inner-->
+              </div>
+            </div><!--end row-->
+          </div><!--end container-->
+        </div><!--end banner_caption-->
+      </div>
+      <div class="item">
+        <img src="{{url_for('static', filename='home/slider/slider_image_4.jpg')}}" alt="" />
+        <div class="banner_caption">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="caption_inner animated fadeInUp">
+                  <h1>Find your dream course</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consectetur nte volutpat sem aliquam lobortis. Mauris porta fermentum volutpat. Praesent est sapien, tincidunt vel arcu vitae, mattis sollicitudin lectus.</p>
+                  <a href="course-fullwidth.html">Find Course</a>
+                </div><!--end caption_inner-->
+              </div>
+            </div><!--end row-->
+          </div><!--end container-->
+        </div><!--end banner_caption-->
+      </div>
+    </div>
+    <a class="left recommended-item-control" href="#recommended-item-carousel" data-slide="prev">
+      <img src="{{url_for('static', filename='home/slider/prev.png')}}">
+      </a>
+    <a class="right recommended-item-control" href="#recommended-item-carousel" data-slide="next">
+      <img src="{{url_for('static', filename='home/slider/next.png')}}">
+    </a>
+  </div><!--end banner-->
 
-<!-- Header -->
-<header id="header">
-  <div class="intro">
-    <div class="overlay">
-      <div class="container">
-        <div class="row">
-          <div class="intro-text">
-            <h1><strong>scrumJET</strong> <span>-</span> Training & Certification</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipiscing.</p>
-            <a href="#about" class="btn btn-custom btn-lg page-scroll">Learn More</a> </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</header>
-
-<!-- About Section -->
-<div id="about">
-  <div class="container">
-    <div class="section-title text-center center">
-      <h2>Our Story</h2>
-      <hr>
-    </div>
-    <div class="row">
-      <div class="col-xs-12 col-md-6 text-center"> <img src="img/about.jpg" class="img-responsive" alt=""> </div>
-      <div class="col-xs-12 col-md-6">
-        <div class="about-text">
-          <h3>The Studio</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
-          <h3>How We Work</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Services Section -->
-<div id="services">
-  <div class="container">
-    <div class="col-md-10 col-md-offset-1 section-title text-center">
-      <h2>Our Services</h2>
-      <hr>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leonec.</p>
-    </div>
-    <div class="row">
-      <div class="col-xs-12 col-sm-4 service"> <img src="img/residential-design.jpg" class="img-responsive" alt="Project Title">
-        <h3>Residential Design</h3>
-        <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam. Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend.</p>
-      </div>
-      <div class="col-xs-12 col-sm-4 service"> <img src="img/office-design.jpg" class="img-responsive" alt="Project Title">
-        <h3>Office Design</h3>
-        <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam. Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend.</p>
-      </div>
-      <div class="col-xs-12 col-sm-4 service"> <img src="img/commercial-design.jpg" class="img-responsive" alt="Project Title">
-        <h3>Commercial Design</h3>
-        <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam. Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend.</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Team Section -->
-<div id="team" class="text-center">
-  <div class="overlay">
+<!--about-->
+  <div class="aboutArea">
     <div class="container">
-      <div class="col-md-8 col-md-offset-2 section-title">
-        <h2>Meet the Team</h2>
-        <hr>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leonec.</p>
-      </div>
-      <div id="row">
-        <div class="col-md-3 col-sm-6 team">
-          <div class="thumbnail"> <img src="img/team/01.jpg" alt="..." class="team-img">
-            <div class="caption">
-              <h3>John Doe</h3>
-              <p>Director</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6 team">
-          <div class="thumbnail"> <img src="img/team/02.jpg" alt="..." class="img-circle team-img">
-            <div class="caption">
-              <h3>Mike Doe</h3>
-              <p>Senior Designer</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6 team">
-          <div class="thumbnail"> <img src="img/team/03.jpg" alt="..." class="img-circle team-img">
-            <div class="caption">
-              <h3>Jane Doe</h3>
-              <p>Senior Designer</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6 team">
-          <div class="thumbnail"> <img src="img/team/04.jpg" alt="..." class="img-circle team-img">
-            <div class="caption">
-              <h3>Karen Doe</h3>
-              <p>Project Manager</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Contact Section -->
-<div id="contact">
-  <div class="container">
-    <div class="section-title text-center">
-      <h2>Contact Us</h2>
-      <hr>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leonec.</p>
-    </div>
-    <div class="col-md-4">
-      <h3>Contact Info</h3>
-      <div class="contact-item"> <span>Address</span>
-        <p>4321 California St,<br>
-          San Francisco, CA 12345</p>
-      </div>
-      <div class="contact-item"> <span>Email</span>
-        <p>info@company.com</p>
-      </div>
-      <div class="contact-item"> <span>Phone</span>
-        <p> +1 123 456 1234</p>
-      </div>
-    </div>
-    <div class="col-md-8">
-      <h3>Leave us a message</h3>
-      <form name="sentMessage" id="contactForm" novalidate>
+      <div class="row clearfix">
+        <div class="col-xs-12">
+          <div class="aboutTitle">
+            <h2>Our Popular Courses</h2>
+          </div><!-- aboutTitle -->
+        </div><!-- col-sm-3 col-xs-12 -->
+      </div><!-- row clearfix -->
+        <div class="about_inner clearfix">
         <div class="row">
-          <div class="col-md-6">
-            <div class="form-group">
-              <input type="text" id="name" class="form-control" placeholder="Name" required="required">
-              <p class="help-block text-danger"></p>
-            </div>
+          <div class="col-xs-6 col-sm-3">
+            <div class="aboutImage">
+              <a href="single-course-right-sidebar.html">
+                <img src="{{url_for('static', filename='home/learn/learn_1.jpg')}}" alt="" class="img-responsive" />
+                <div class="overlay">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consectetur nte volutpat sem aliquam lobortis.</p>
+                </div>
+                <span class="captionLink">Scrum Fundamentals<span></span></span>
+              </a>
+            </div><!-- aboutImage -->
           </div>
-          <div class="col-md-6">
-            <div class="form-group">
-              <input type="email" id="email" class="form-control" placeholder="Email" required="required">
-              <p class="help-block text-danger"></p>
-            </div>
+            <div class="col-xs-6 col-sm-3">
+            <div class="aboutImage">
+              <!-- insert_course_page_here -->
+              <a href="course1.html">
+                <img src="{{url_for('static', filename='home/learn/learn_2.jpg')}}" alt="" class="img-responsive" />
+                <div class="overlay">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consectetur nte volutpat sem aliquam lobortis.</p>
+                </div>
+                <span class="captionLink">Agile Methodology<span></span></span>
+              </a>
+            </div><!-- aboutImage -->
           </div>
-        </div>
-        <div class="form-group">
-          <textarea name="message" id="message" class="form-control" rows="4" placeholder="Message" required></textarea>
-          <p class="help-block text-danger"></p>
-        </div>
-        <div id="success"></div>
-        <button type="submit" class="btn btn-custom btn-lg">Send Message</button>
-      </form>
-    </div>
-  </div>
-</div>
-
-</body>
-</html>
+            <div class="col-xs-6 col-sm-3">
+            <div class="aboutImage">
+            <!-- insert_course_page_here -->
+              <a href="course2.html">
+                <img src="{{url_for('static', filename='home/learn/learn_3.jpg')}}" alt="" class="img-responsive" />
+                <div class="overlay">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consectetur nte volutpat sem aliquam lobortis.</p>
+                </div>
+                <span class="captionLink">Project Management<span></span></span>
+              </a>
+            </div><!-- aboutImage -->
+          </div>
+            <div class="col-xs-6 col-sm-3">
+            <div class="aboutImage">
+              <!-- insert_course_page_here -->
+              <a href="course3.html">
+                <img src="{{url_for('static', filename='home/learn/learn_4.jpg')}}" alt="" class="img-responsive" />
+                <div class="overlay">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consectetur nte volutpat sem aliquam lobortis.</p>
+                </div>
+                <span class="captionLink">Iterative Development<span></span></span>
+              </a>
+            </div><!-- aboutImage -->
+          </div>
+        </div><!-- row -->
+      </div><!-- about_inner -->
+      </div><!-- container -->
+  </div><!-- aboutArea -->
 
 {% endblock %}
