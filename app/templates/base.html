@@ -20,7 +20,7 @@
 {% endblock %}
 
 {% block navbar %}
-    <header class="header header_style_01">
+    <header class="header">
         <nav class="megamenu navbar navbar-default navbar-fixed-top">
             <div class="container-fluid">
                 <div class="navbar-header">
@@ -30,12 +30,12 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.html"><img src="images/logos/logo.png" alt="image"></a>
+                    <a class="navbar-brand" href="index.html"><img src="{{ url_for('static', filename='images/logos/logo.png')}}" alt="image"></a>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-left">
                         <li><a class="active" href="{{ url_for('main.index') }}">Home</a></li>
-                        <li><a href="about-us.html">About us</a></li>
+                        <li><a href="{{ url_for('main.about') }}">About us</a></li>
                         <li><a href="{{ url_for('main.courses') }}">Courses</a></li>
                         <li><a href="features.html">Blog</a></li>
                         <li><a href="testimonials.html">Testimonials</a></li>
