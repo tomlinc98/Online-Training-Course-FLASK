@@ -17,6 +17,10 @@ def courses(cat=None):
 def about(cat=None):
     return render_template('about.html',  title='About')
 
+@main.route('/blog', methods=['GET', 'POST'])
+def blog(cat=None):
+    return render_template('blog.html',  title='Blog')
+
 @main.route('/csm', methods=['GET', 'POST'])
 def csm(cat=None):
     return render_template('csm.html',  title='What is CSM?')
