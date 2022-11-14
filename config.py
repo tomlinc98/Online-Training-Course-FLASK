@@ -17,3 +17,8 @@ class Config(object):
 	MAIL_USERNAME = os.environ.get('MAIL_USERNAME')
 	MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD')
 	ADMINS = ['email@email.com']
+	# enable fontawesome
+	BOOTSTRAP_FONTAWESOME = True
+	BOOTSTRAP_USE_CDN = True # not working? just download the cdn and link to it in static/js/
+	BOOTSTRAP_JQUERY_VERSION = '3.2.1'
+	BOOTSTRAP_SERVE_LOCAL = False
