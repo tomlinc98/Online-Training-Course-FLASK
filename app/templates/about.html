@@ -2,43 +2,105 @@
 
 {% block app_content %}
 
-<!-- count section -->
-  <div class="count_section clearfix">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12">
-          <div class="count_title">
-            <h1>What we have</h1>
-          </div><!--end count inner-->
-        </div>
-      </div><!--end row-->
-      <div class="row">
-        <div class="col-xs-12 col-sm-3">
-          <div class="count_inner">
-            <h1>18298</h1>
-            <h3>Undergraduate <br/> Students</h3>
-          </div><!--end count inner-->
-        </div>
-        <div class="col-xs-12 col-sm-3">
-          <div class="count_inner postgraduate">
-            <h1>24583</h1>
-            <h3>Postgraduate <br/> Students</h3>
-          </div><!--end count inner-->
-        </div>
-        <div class="col-xs-12 col-sm-3">
-          <div class="count_inner res">
-            <h1>37904</h1>
-            <h3>Research <br/> Students</h3>
-          </div><!--end count inner-->
-        </div>
-        <div class="col-xs-12 col-sm-3">
-          <div class="count_inner stuff">
-            <h1>892</h1>
-            <h3>Teacher and <br/> Stuff Members</h3>
-          </div><!--end count inner-->
-        </div>
-      </div><!--end row-->
+<!-- main content -->
+  <div class="mainContent clearfix">
+    
+    <!-- row 1 -->
+      <div class="container">
+          <div class="row">
+
+            <!-- about area -->
+              <div class="col-xs-12 col-sm-6">
+                <div class="content_left features">
+                  <h1>Royal College</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris </p>
+
+                  <p>nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id</p>
+                  <ul>
+                    <li><i class="fa fa-check-circle-o"></i>this is a bullet point</li>
+                    <li><i class="fa fa-check-circle-o"></i>this is another bullet point</li>
+                    <li><i class="fa fa-check-circle-o"></i>this is also bullet point</li>
+                    <li><i class="fa fa-check-circle-o"></i>this is a bullet point</li>
+                  </ul>
+                </div><!--end content left-->
+              </div><!-- end about area-->
+
+            <!-- about image -->
+              <div class="col-xs-12 col-sm-6">
+                <div class="content_right features">
+                  <h2>Rounded Corners</h2>
+                    <p>The .img-rounded class adds rounded corners to an image (not available in IE8):</p>            
+                    <img src="cinqueterre.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236">
+                </div><!--end content left-->
+              </div><!-- end about image area-->              
+
+        </div><!--end row-->
     </div><!--end container-->
-  </div><!--end section-->
+
+    <!-- row 2 -->
+      <div class="container">
+        <div class="row">
+                      <!-- testimonials -->
+              <div class="col-md-4">
+                <div class="card p-3 text-center px-4">
+                  <div class="user-image"> 
+              <img src="{{ url_for('static', filename='about/man.png')}}" class="rounded-circle" width="80">  
+                  </div>
+                  <div class="user-content">
+                      <h5 class="mb-0">Bruce Hardy</h5>
+                      <span>Software Developer</span>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  </div>
+                  <div class="ratings">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card p-3 text-center px-4">
+                  <div class="user-image">
+              <img src="{{ url_for('static', filename='about/man.png')}}" class="rounded-circle" width="80">
+                  </div>
+                  <div class="user-content">
+                    <h5 class="mb-0">Mark Smith</h5>
+                    <span>Web Developer</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  </div>
+                  <div class="ratings">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card p-3 text-center px-4">
+                  <div class="user-image">
+              <img src="{{ url_for('static', filename='about/man.png')}}" class="rounded-circle" width="80">
+                  </div>
+                  <div class="user-content">
+                    <h5 class="mb-0">Veera Duncan</h5>
+                    <span>Software Architect</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  </div>
+                  <div class="ratings">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </div>
+                </div>
+              </div>
+
+
+</div> <!-- end main content -->
+
+
+
 
 {% endblock %}
