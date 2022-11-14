@@ -21,9 +21,9 @@ def about(cat=None):
 def blog(cat=None):
     return render_template('blog.html',  title='Blog')
 
-@main.route('/csm', methods=['GET', 'POST'])
-def csm(cat=None):
-    return render_template('csm.html',  title='What is CSM?')
+@main.route('/basics', methods=['GET', 'POST'])
+def basics(cat=None):
+    return render_template('basics.html',  title='Basics of Scrum')
 
 """@app.route("/details/<int:pet_id>")
 def pet_details(pet_id):
