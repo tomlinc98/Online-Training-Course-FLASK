@@ -1,3 +1,9 @@
+/*=== navbar ===*/
+.navbar-brand {
+  position: relative;
+  float: top;
+}
+
 /*=== carousel ===*/
 .banner {
   position: relative;
