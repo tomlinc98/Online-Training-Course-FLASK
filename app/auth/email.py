@@ -1,7 +1,7 @@
 from flask import render_template, current_app
 from app.email import send_email
 
-APP_NAME = 'Template name'
+APP_NAME = 'scrumJET'
 
 
 def send_password_reset_email(user):
