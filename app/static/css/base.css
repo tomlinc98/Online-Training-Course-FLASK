@@ -1,0 +1,47 @@
+/* ====== home =====
+
+1. navbar
+2. footer
+
+===================== */
+
+/*=== navbar ===*/
+.navbar-brand {
+  margin-right: 6px;
+}
+
+.navbar {
+  margin-bottom: 0;
+  border: none;
+}
+
+/*=== footer ===*/
+.text-small {
+  font-size: 0.9rem;
+  color: white;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+}
+
+.form-control {
+  background: #222c34;
+  border-color: #49c32c;
+}
+
+.form-control:focus {
+  background: white;
+}
+
+footer {
+  background:#222c34;
+}
+
+
