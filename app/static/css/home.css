@@ -11,7 +11,6 @@
 /*=== 1. carousel ===*/
 .carousel {
   position: relative;
-  background: #222c34;
 }
 
 .carousel .slides {
@@ -120,14 +119,13 @@
 }
 
 .caption_inner h1 {
-  font-family: 'Roboto Slab', serif;
   font-weight: 700;
   color: #ffffff;
   text-transform: uppercase;
 }
 
 .caption_inner p {
-  color: #fff;
+  color: #ffffff;
 }
 
 .caption_inner a {
@@ -135,8 +133,8 @@
   text-decoration: none;
   text-transform: uppercase;
   display: inline-block;
-  color: #fff !important;
-  background: #49c32c;
+  color: #fffffe !important;
+  background: #e63946;
   cursor: pointer;
 }
 
@@ -185,25 +183,22 @@
   }
 }
 
-.aboutArea, .aboutTitle, .aboutImage, .mainContent, .menuFooter, .footer {
+.aboutArea, .aboutTitle, .aboutImage, .mainContent, .menuFooter {
   width: 100%;
   display: block;
 }
 
-.aboutArea, .footer {
+.aboutArea {
   padding: 35px 0 40px 0;
-  background: #222c34;
-  background: linear-gradient(to right, #222c34 0%, #2a3a46 100%);
+  background: #001219;
 }
 
 .aboutTitle > h2 {
   text-transform: uppercase;
-  color: #fff;
+  color: #ffffff;
   text-align: center;
   font-weight: 700;
   font-size: 26px;
-  color: #ffffff;
-  text-transform: uppercase;
   margin: 0 0 25px;
 }
 
@@ -251,7 +246,7 @@
   font-size: 14px;
   line-height: 23px;
   margin: 0;
-  color: #ffffff;
+  color: #001219;
   opacity: 0;
   -webkit-transform: translate(0, 30px);
   transform: translate(0, 30px);
@@ -269,7 +264,7 @@
 }
 
 .aboutImage:hover .overlay {
-  background: rgba(0, 0, 0, 0.45);
+  background: #ffffff;
   transition: background 0.3s;
 }
 
@@ -284,18 +279,18 @@
   width: 100%;
   height: 44px;
   display: block;
-  color: #fff;
+  color: #ffffff;
   text-transform: uppercase;
   line-height: 44px;
   text-indent: 13px;
-  background-color: #0060b1;
+  background-color: #457b9d;
   position: absolute;
   left: 0;
   bottom: 0;
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   font-size: 14px;
-  color: #fff;
+  color: #ffffff;
 }
 
 @media (min-width: 768px) {
@@ -360,7 +355,7 @@
 /*=== 3. video ===*/
 .mainContent {
   padding: 47px 0 65px 0;
-  background-color: #fff;
+  background-color: #ffffff;
   float: left;
 }
 
@@ -373,8 +368,8 @@
 
 .videoArea {
   margin-bottom: 27px;
-  padding-bottom: 30px;
-  border-bottom: 1px solid #dce4ea;
+  padding-bottom: 110px;
+  border-bottom: 1px solid #1D3557;
 }
 
 .videoArea > h3 {
@@ -420,8 +415,8 @@
 .btn.learnBtn {
   padding: 0;
   height: 42px;
-  border: 1px solid #0060b1;
-  background: #0060b1;
+  border: 1px solid #1D3557;
+  background: #E63946;
   border-radius: 0;
   line-height: 42px;
   color: #ffffff;
@@ -454,7 +449,7 @@
 }
 
 .resultPart h4 {
-  color: #000;
+  color: #0d0d0d;
   margin-bottom: 13px;
   font-size: 15px;
 }
@@ -485,7 +480,6 @@
 
 .videoNine {
   padding-right: 30px;
-  border-right: 1px solid #dce4ea;
 }
 
 @media (max-width: 767px) {
@@ -532,17 +526,9 @@
 }
 
 .sbHolder, .sbSelector, .sbSelector:hover, .sbOptions a {
-  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
 }
 
-.formArea, .getArea {
-  width: 100%;
-  margin-bottom: 20px;
-  border: 1px solid #DCE4EA;
-  padding: 15px 12px 25px;
-  border-top: 3px solid #49c32c;
-}
 .formArea.admission {
   padding: 0;
   border: none;
@@ -557,43 +543,46 @@
 .formArea, .getArea {
   width: 100%;
   margin-bottom: 20px;
-  border: 1px solid #DCE4EA;
+  border: 1px solid #1D3557;
   padding: 15px 12px 25px;
-  border-top: 3px solid #49c32c;
+  border-top: 3px solid #E63946;
 }
 
 .formArea .form-group {
   margin: 0 0 20px;
 }
 
-/*== 5. counter box ==*/
-.p-y-2 {
+/*== 5. what is csm? ==*/
+#csm {
+  background:linear-gradient(to top, #ffffff 0%, #FBFBFF 100%);
+  background-clip: padding-box;
+  
+}
+
+/*== 6. counter up ==*/
+.counter_box {
   padding-top: 28px;
   padding-bottom: 28px;
 }
-.p-y-3 {
-  padding-top: 45px;
-  padding-bottom: 45px;
 }
-.m-b-1 {
+.counter_text {
+  margin-top: 18px;
   margin-bottom: 18px; 
 }
-.m-t-1 { 
-  margin-top: 18px;
-}
 
-.main_counter_area{         
+.main_counter_area{       
+  margin-top: 30px;  
   background-size: cover;
   overflow: hidden;
+  border-top: 1px solid #001219;
+  border-bottom: 1px solid #001219;
 
 }
 
 .main_counter_area .main_counter_content .single_counter{
-  background: #222c34;
   text-transform: uppercase;
   font-weight: 700;
-  color: #fff;
-  border-top: 3px solid #84e06f;
+  color: #E63946;
 }
 .main_counter_area .main_counter_content .single_counter i{
   font-size:36px;
@@ -602,4 +591,10 @@
 .selectBox {
   margin-bottom: 20px;
   width: 100%;
+}
+
+/*== csm ==*/
+.csm {
+  padding: 20px;
+  margin: 1px;
 }
