@@ -43,7 +43,6 @@
                         <li><a href="{{ url_for('main.courses') }}">Courses</a></li>
                         <li><a href="{{ url_for('main.blog') }}">Blog</a></li>
                         <li><a href="{{ url_for('main.contact') }}">Contact</a></li>
-                        <li><a href="{{ url_for('main.basics') }}">Basics of Scrum</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         {% if current_user.is_authenticated %}
@@ -87,54 +86,37 @@
         {% block app_content %}{% endblock %}
     </div>
 
-<div class="d-flex flex-column h-100">
-
     <!-- footer -->
-    <footer class="w-100 py-4 flex-shrink-0">
-        <div class="container py-4">
-            <div class="row gy-4 gx-5">
-                <div class="col-lg-4 col-md-6">
-                    <h5 class="h1 text-white">FB.</h5>
-                    <p class="small text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
-                        <p class="text-muted text-center">
-                            &copy; <script>document.write(
-                                new Date().getFullYear())
-                            </script>, scrumJET
-                        </p>
-                    </div>
-                <div class="col-lg-2 col-md-6">
-                    <h5 class="text-white mb-3">Quick links</h5>
-                    <ul class="list-unstyled text-muted">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Get started</a></li>
-                        <li><a href="#">FAQ</a></li>
+    <footer class="footer-bs">
+        <div class="row">
+        	<div class="col-sm-4 footer-brand animated fadeInLeft">
+            	<h2>Logo</h2>
+                <p>Suspendisse hendrerit tellus laoreet luctus pharetra. Aliquam porttitor vitae orci nec ultricies. Curabitur vehicula, libero eget faucibus faucibus, purus erat eleifend enim, porta pellentesque ex mi ut sem.</p>
+                <p>© 2022 scrumJET, All rights reserved</p>
+            </div>
+        	<div class="col-sm-4 footer-nav animated fadeInUp">
+            	<h4>Links —</h4>
+            	<div class="col-sm-12">
+                    <ul class="list">
+                        <li><a href="{{ url_for('main.about') }}">About Us</a></li>
+                        <li><a href="{{ url_for('main.contact') }}">Contacts</a></li>
+                        <li><a href="{{ url_for('main.terms') }}">Terms & Conditions</a></li>
+                        <li><a href="{{ url_for('main.policy') }}">Privacy Policy</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-2 col-md-6">
-                    <h5 class="text-white mb-3">Quick links</h5>
-                    <ul class="list-unstyled text-muted">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Get started</a></li>
-                        <li><a href="#">FAQ</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <h5 class="text-white mb-3">Newsletter</h5>
-                    <p class="small text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
-                    <form action="#">
-                        <div class="input-group mb-3">
-                            <input class="form-control" type="text" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
-                            <button class="btn btn-primary" id="button-addon2" type="button"><i class="fas fa-paper-plane"></i></button>
-                        </div>
-                    </form>
-                </div>
+            </div>
+        	<div class="col-sm-2 footer-social animated fadeInDown">
+            	<h4>Follow Us</h4>
+            	<ul>
+                	<li><a href="#">Facebook</a></li>
+                	<li><a href="#">Twitter</a></li>
+                	<li><a href="#">Instagram</a></li>
+                	<li><a href="#">RSS</a></li>
+                </ul>
             </div>
         </div>
     </footer>
 </div>
-
 
 </div>
 {% endblock %}
