@@ -16,7 +16,7 @@
         <div class="carousel_caption">
           <div class="container">
             <div class="row">
-              <div class="col-xs-12">
+              <div class="col-sm-12">
                 <div class="caption_inner animated fadeInUp">
                   <h1>Welcome To Scrum Jet</h1>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consectetur ante volutpat sem aliquam lobortis. Mauris porta fermentum volutpat. Praesent est sapien, tincidunt vel arcu vitae, mattis sollicitudin lectus.</p>
@@ -33,7 +33,7 @@
         <div class="carousel_caption">
           <div class="container">
             <div class="row">
-              <div class="col-xs-12">
+              <div class="col-sm-12">
                 <div class="caption_inner animated fadeInUp">
                   <h1>Admission going on</h1>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consectetur ante volutpat sem aliquam lobortis. Mauris porta fermentum volutpat. Praesent est sapien, tincidunt vel arcu vitae, mattis sollicitudin lectus.</p>
@@ -50,7 +50,7 @@
         <div class="carousel_caption">
           <div class="container">
             <div class="row">
-              <div class="col-xs-12">
+              <div class="col-sm-12">
                 <div class="caption_inner animated fadeInUp">
                   <h1>Arrange a tour to our college</h1>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consectetur ante volutpat sem aliquam lobortis. Mauris porta fermentum volutpat. Praesent est sapien, tincidunt vel arcu vitae, mattis sollicitudin lectus.</p>
@@ -67,7 +67,7 @@
         <div class="carousel_caption">
           <div class="container">
             <div class="row">
-              <div class="col-xs-12">
+              <div class="col-sm-12">
                 <div class="caption_inner animated fadeInUp">
                   <h1>Find your dream course</h1>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consectetur nte volutpat sem aliquam lobortis. Mauris porta fermentum volutpat. Praesent est sapien, tincidunt vel arcu vitae, mattis sollicitudin lectus.</p>
@@ -92,15 +92,15 @@
   <div class="aboutArea">
     <div class="container">
       <div class="row clearfix">
-        <div class="col-xs-12">
+        <div class="col-sm-12">
           <div class="aboutTitle">
             <h2>Our Popular Courses</h2>
           </div><!-- aboutTitle -->
-        </div><!-- col-sm-3 col-xs-12 -->
+        </div><!-- col-sm-12 -->
       </div><!-- row clearfix -->
         <div class="about_inner clearfix">
         <div class="row">
-          <div class="col-xs-6 col-sm-3">
+          <div class="col-sm-3">
             <div class="aboutImage">
               <a href="single-course-right-sidebar.html">
                 <img src="{{url_for('static', filename='home/learn/learn_1.jpg')}}" alt="" class="img-responsive" />
@@ -111,7 +111,7 @@
               </a>
             </div><!-- aboutImage -->
           </div>
-            <div class="col-xs-6 col-sm-3">
+            <div class="col-sm-3">
             <div class="aboutImage">
               <!-- insert_course_page_here -->
               <a href="course1.html">
@@ -123,7 +123,7 @@
               </a>
             </div><!-- aboutImage -->
           </div>
-            <div class="col-xs-6 col-sm-3">
+            <div class="col-sm-3">
             <div class="aboutImage">
             <!-- insert_course_page_here -->
               <a href="course2.html">
@@ -135,7 +135,7 @@
               </a>
             </div><!-- aboutImage -->
           </div>
-            <div class="col-xs-6 col-sm-3">
+            <div class="col-sm-3">
             <div class="aboutImage">
               <!-- insert_course_page_here -->
               <a href="course3.html">
@@ -213,63 +213,75 @@
     </div><!-- container-->
 
   <!-- row 2 -->
-    <div class="container">
-      <div class="row clearfix">
+    <div id="csm">
+      <div class="container">
+          <div class="row">
+            <div class="col-sm-5">
+                <h1>The Basics of Scrum</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis mauris accumsan, aliquet dui vel, rutrum dolor. Nunc vitae auctor metus. Quisque posuere nibh ut sem tincidunt, quis feugiat elit lobortis. Sed ut fringilla purus. Suspendisse volutpat ex non sem vehicula venenatis ut sed purus. Nunc eget fermentum metus, non consectetur velit. Donec semper leo a tellus posuere mollis. Duis a eleifend metus. Sed viverra enim sit amet mattis viverra. Ut euismod viverra lectus id aliquam. Cras eget odio mauris. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec ipsum nulla, vestibulum id diam eu, malesuada malesuada ex. Vestibulum et volutpat mauris. Donec sagittis sem vitae lacinia pellentesque. Ut mattis viverra aliquam. </p>
+            </div>
+            <div class="col-sm-7 img-responsive"><img src="{{url_for('static', filename='home/scrum.png')}}" alt="scrum cycle" style="padding-left: 10px; padding-top:30px; padding-bottom: 30px; width: 100%;"/></div>
+          </div>
+      </div>
+    </div>
 
-        <!-- counter -->
-          <section id="counter" class="counter">
-              <div class="main_counter_area">
-                  <div class="overlay p-y-3">
-                      <div class="container">
-                          <div class="row">
-                              <div class="main_counter_content text-center white-text wow fadeInUp">
-                                  <div class="col-md-3">
-                                      <div class="single_counter p-y-2 m-t-1">
-                                          <i class="glyphicon glyphicon-education m-b-1"></i>
-                                          <h2 class="statistic-counter">30</h2>
-                                          <span></span>
-                                          <p>Academics</p>
-                                      </div>
+  <!-- row 3 -->
+
+  
+  <!-- row 4 -->
+  <div class="container">
+    <div class="row clearfix">
+      <!-- counter -->
+        <section id="counter" class="counter">
+          <div class="main_counter_area">
+              <div class="overlay counter_box">
+                  <div class="container">
+                      <div class="row">
+                          <div class="main_counter_content text-center white-text wow fadeInUp">
+                              <div class="col-md-3">
+                                  <div class="single_counter counter_box counter_text">
+                                      <i class="glyphicon glyphicon-education counter_text"></i>
+                                      <h2 class="statistic-counter">30</h2>
+                                      <span></span>
+                                      <p>Academics</p>
                                   </div>
-                                  <div class="col-md-3">
-                                      <div class="single_counter p-y-2 m-t-1">
-                                          <i class="glyphicon glyphicon-ok m-b-1"></i>
-                                          <h2 class="statistic-counter">1000</h2>
-                                          <p>Satisfied Students</p>
-                                      </div>
+                              </div>
+                              <div class="col-md-3">
+                                  <div class="single_counter counter_box counter_text">
+                                      <i class="glyphicon glyphicon-ok counter_text"></i>
+                                      <h2 class="statistic-counter">1000</h2>
+                                      <p>Satisfied Students</p>
                                   </div>
-                                  <div class="col-md-3">
-                                      <div class="single_counter p-y-2 m-t-1">
-                                          <i class="glyphicon glyphicon-user m-b-1"></i>
-                                          <h2 class="statistic-counter">500</h2>
-                                          <p>Currently Enrolled</p>
-                                      </div>
+                              </div>
+                              <div class="col-md-3">
+                                  <div class="single_counter counter_box counter_text">
+                                      <i class="glyphicon glyphicon-user counter_text"></i>
+                                      <h2 class="statistic-counter">500</h2>
+                                      <p>Currently Enrolled</p>
                                   </div>
-                                  <div class="col-md-3">
-                                      <div class="single_counter p-y-2 m-t-1">
-                                          <i class=" glyphicon glyphicon-pencil m-b-1"></i>
-                                          <h2 class="statistic-counter">400</h2>
-                                          <p>Resources</p>
-                                      </div>
+                              </div>
+                              <div class="col-md-3">
+                                  <div class="single_counter counter_box counter_text">
+                                      <i class=" glyphicon glyphicon-pencil counter_text"></i>
+                                      <h2 class="statistic-counter">400</h2>
+                                      <p>Resources</p>
                                   </div>
                               </div>
                           </div>
                       </div>
                   </div>
               </div>
-          </section><!-- end counter -->
-
-      </div><!-- row -->
-    </div><!-- container -->
-
-  <!-- row 3 -->
-  <div class="container">
-    <div class="row clearfix">
-
-
-
+          </div>
+      </section><!-- end counter -->
     </div><!-- row -->
   </div><!-- container -->
+
+  <!-- row 5 -->
+  <div class="container">
+    <div class="row">
+
+    </div>
+  </div>
 
 </div> <!-- end main content -->
 
