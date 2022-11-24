@@ -25,9 +25,13 @@ def about(cat=None):
 def blog(cat=None):
     return render_template('blog.html',  title='Blog')
 
-@main.route('/basics', methods=['GET', 'POST'])
-def basics(cat=None):
-    return render_template('basics.html',  title='Basics of Scrum')
+@main.route('/terms', methods=['GET', 'POST'])
+def terms(cat=None):
+    return render_template('legal/terms.html',  title='Terms & Conditions')
+
+@main.route('/policy', methods=['GET', 'POST'])
+def policy(cat=None):
+    return render_template('legal/policy.html',  title='Privacy Policy')
 
 """@app.route("/details/<int:pet_id>")
 def pet_details(pet_id):
