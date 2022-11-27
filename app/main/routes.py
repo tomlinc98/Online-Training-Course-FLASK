@@ -25,6 +25,10 @@ def about(cat=None):
 def blog(cat=None):
     return render_template('blog.html',  title='Blog')
 
+@main.route('/blog-form', methods=['GET', 'POST'])
+def blogform(cat=None):
+    return render_template('blog-form.html',  title='Blog Form')
+
 @main.route('/terms', methods=['GET', 'POST'])
 def terms(cat=None):
     return render_template('legal/terms.html',  title='Terms & Conditions')
