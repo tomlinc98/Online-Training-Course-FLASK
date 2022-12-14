@@ -49,3 +49,31 @@ class User(db.Model, TimestampMixin, UserMixin):
         except:
             return
         return User.query.get(id)
+
+# announcements class
+class Announcement(db.Model, TimestampMixin):
+    id = db.Column(db.Integer, primary_key=True)
+    title = db.Column(db.String, nullable=False)
+    body = db.Column(db.String, nullable=False)
+
+    def __repr__(self):
+        return f'<Announcement "{self.title}">'
+
+# Course type(certified/non-certified) class
+"""class Type(db.Model, TimestampMixin):
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String, nullable=False, unique=True)
+    courses = db.relationship('Course', backref = 'type')
+
+    def __repr__(self):
+        return f'<Type "{self.name}">'
+
+# course class
+class Course(db.Model, TimestampMixin):
+    id = db.Column(db.Integer, primary_key=True)
+    type = db.Column(db.String, db.ForeignKey('type.id'), nullable=False)
+    title = db.Column(db.String, unique=True)
+    description = db.Column(db.String, nullable=True)
+    
+    def __repr__(self):
+        return f'<Course "{self.id}">'"""
