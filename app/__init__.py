@@ -22,7 +22,9 @@ APP_NAME = 'scrumJET'
 def create_app(config_class=Config):
     app = Flask(__name__)
     app.config.from_object(config_class)
+    app.config['DEBUG'] = True
 
+    # initialize flask extensions
     db.init_app(app)
     login.init_app(app)
     bootstrap.init_app(app)
@@ -34,7 +36,7 @@ def create_app(config_class=Config):
     from app.main.routes import main
     from app.errors.handlers import errors
 
-    # register the blueprint
+    # register blueprints
     app.register_blueprint(auth)
     app.register_blueprint(main)
     app.register_blueprint(errors)
