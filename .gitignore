@@ -1,11 +1,12 @@
 venv
 __pycache__
 \app\__pycache__
-app/__pycache__/
+app/__pycache__
 app/main/__pycache__/
 app/__pycache__/
 app/main/__pycache__/
 app\__pycache__
+bootstrap-3.3.7
 
 # Json #
 package-lock.json
