@@ -1,118 +1,90 @@
 /* ====== home =====
 
-1. navbar
-2. body
+1. body
+2. navbar
 
 ===================== */
 
-/*=== 1. navbar ===*/
-.navbar-brand {
-  margin-right: 6px;
-}
-
-.navbar {
-  margin-bottom: 0;
-  border: none;
-  color: #fffffe;
-}
-
-.navbar li a {
-  color: #6246ea;
-}
-
-/*=== 2. body ===*/
+/*=== 1. body ===*/
 
 body {
   border: none;
   background:#ffffff;
+  color: #5a5a5a;
+  padding-bottom: 20px;  
 }
 
-body h1 {
-  color:#2b2c34;
+body h1 h2 h3 p a {
+  color: #5a5a5a;
 }
 
-body h2 {
-  color:#2b2c34;
+/*=== 2. navbar ===*/
+.navbar-brand {
+  padding: 0px; /* firefox bug fix */
+}
+.navbar-brand>img {
+  height: 100%;
+  padding: 8px; /* firefox bug fix */
+  width: auto;
 }
 
-body h3 {
-  color:#2b2c34;
+.navbar {
+  margin-bottom: 20px;
 }
 
-body p {
-  color:#2b2c34;
-}
-
-body a {
-  color: #2b2c34;
+.navbar li a {
+  font-size: 18px;
 }
 
 /*=== footer ===*/
-.footer-bs {
-  background-color: #3c3d41;
-  padding: 60px 40px;
-  color: rgba(255,255,255,1.00);
-  margin-bottom: 20px;
-  border-bottom-right-radius: 6px;
-  border-top-left-radius: 0px;
-  border-bottom-left-radius: 6px;
+#page-footer {
+  padding: 3rem 2rem 1rem;
+  background:#fafafa
 }
 
-.footer-bs .footer-brand, .footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs { 
-  padding:10px 25px; 
+hr {
+  border-top: 1px solid rgba(0, 0, 0, .1);
 }
 
-.footer-map {
-  padding-top: 10px;
-  padding-right: 30px;
+/* Add right borders for the divs... */
+#page-footer .footer-main-links div {
+  border-right: 1px solid rgba(0, 0, 0, .1);
+  padding: 1.25rem;
 }
 
-.footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-map { 
-  border-color: transparent;
+/* ...except no border on the right-most div */
+#page-footer .footer-main-links div:last-of-type {
+  border: none;
 }
 
-.footer-bs .footer-brand h2 { 
-  margin:0px 0px 10px; 
+/* Remove bullets for social social icons */
+#page-footer .social-icons {
+  list-style-type: none;
 }
 
-.footer-bs .footer-brand p { 
-  font-size:12px; color:rgba(255,255,255,0.70); 
+/* Style the social icon list items further */
+#page-footer .social-icons li {
+  margin-left: .25rem;
+  margin-right: .25rem;
+  display: inline;
 }
 
-.footer-bs .footer-nav ul.pages { list-style:none; padding:0px; }
-.footer-bs .footer-nav ul.pages li { padding:5px 0px;}
-.footer-bs .footer-nav ul.pages a { color:rgba(255,255,255,1.00); font-weight:bold; text-transform:uppercase; }
-.footer-bs .footer-nav ul.pages a:hover { color:rgba(255,255,255,0.80); text-decoration:none; }
-.footer-bs .footer-nav h4 {
-font-size: 11px;
-text-transform: uppercase;
-letter-spacing: 3px;
-margin-bottom:10px;
+/* Remove styling on the main columnar links */
+.footer-links li {
+  background: transparent;
+  border: 0px;
+  padding: .25rem;
 }
 
-.footer-bs .footer-nav ul.list { list-style:none; padding:0px; }
-.footer-bs .footer-nav ul.list li { padding:5px 0px;}
-.footer-bs .footer-nav ul.list a { color:rgba(255,255,255,0.80); }
-.footer-bs .footer-nav ul.list a:hover { color:rgba(255,255,255,0.60); text-decoration:none; }
-
-.footer-bs .footer-social ul { list-style:none; padding:0px; }
-.footer-bs .footer-social h4 {
-font-size: 11px;
-text-transform: uppercase;
-letter-spacing: 3px;
+/* Styling for the ancillary links */
+#page-footer .footer-ancillary-links {
+  list-style-type: none;
 }
-.footer-bs .footer-social li { padding:5px 4px;}
-.footer-bs .footer-social a { color:rgba(255,255,255,1.00);}
-.footer-bs .footer-social a:hover { color:rgba(255,255,255,0.80); text-decoration:none; }
 
-.footer-bs .footer-map h4 {
-font-size: 11px;
-text-transform: uppercase;
-letter-spacing: 3px;
-margin-bottom:10px;
-}
-.footer-bs .footer-map p { font-size:12px; color:rgba(255,255,255,0.70); }
-
-@media (min-width: 768px) {
-.footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-map { border-left:solid 1px rgba(255,255,255,0.10); }
+#page-footer .footer-ancillary-links li {
+  display: inline;
+  margin-left: .3rem;
+  margin-right: .3rem;
+  text-align: right;
+  font-size: smaller;
 }
