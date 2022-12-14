@@ -6,120 +6,36 @@
 
 
 /*=== 1. content_top ===*/
-.content_top {
-  padding: 30px 0 80px;
-  background: #fff;
+
+/*== 6. counter up ==*/
+.counter_box {
+  padding-top: 28px;
+  padding-bottom: 28px;
 }
 
-.content_top h1 {
-  margin: 0 0 15px;
+.counter_text {
+  margin-top: 18px;
+  margin-bottom: 18px; 
 }
 
-.content_top p {
-  margin: 0 0 25px;
+.main_counter_area{       
+  margin-top: 30px;  
+  background-size: cover;
+  overflow: hidden;
+/*  border-top: 1px solid #001219; */
+/*  border-bottom: 1px solid #001219; */
 }
 
-.content_left ul {
-  margin: 0;
-  list-style-type: none;
-}
-
-.content_right {
-  margin-top: 50px;
-}
-
-@media (max-width: 767px) {
-  .content_right {
-    margin: 20px 0 0;
-  }
-}
-
-.content_right .banner {
-  display: block;
-  width: 100%;
-}
-
-@media (max-width: 767px) {
-  .content_right .banner .slides img {
-    width: 100%;
-  }
-}
-
-.about_caption {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  text-align: center;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.35);
-  padding: 15px 10px;
-}
-
-.about_caption h2 {
-  font-size: 25px;
+.main_counter_area .main_counter_content .single_counter{
   text-transform: uppercase;
-  color: #fff;
-  margin: 0;
   font-weight: 700;
+  color: #000000;
+}
+.main_counter_area .main_counter_content .single_counter i{
+  font-size:36px;
 }
 
-@media (max-width: 479px) {
-  .about_caption h2 {
-    font-size: 15px;
-  }
-}
-
-@media (min-width: 768px) {
-  .about_caption h2 {
-    font-size: 15px;
-  }
-}
-
-@media (min-width: 992px) {
-  .about_caption h2 {
-    font-size: 25px;
-  }
-}
-
-.flex-control-paging {
-  position: absolute;
-  bottom: 70px;
-  text-align: center;
+.selectBox {
+  margin-bottom: 20px;
   width: 100%;
-  float: left;
-  margin: 0;
-  z-index: 999;
-  list-style-type: none;
-}
-
-.flex-control-paging li {
-  display: inline-block;
-  margin: 0 2px;
-}
-
-.flex-control-paging li a {
-  display: block;
-  text-indent: -99999px;
-  cursor: pointer;
-  width: 10px;
-  height: 10px;
-  background: #ffffff;
-  border-radius: 50%;
-}
-
-.flex-control-paging li a.flex-active {
-  background: #0060b1;
-}
-
-#about_banner .flex-direction-nav a {
-  width: 30px;
-  height: 76px;
-}
-
-#about_banner .flex-direction-nav a.flex-prev {
-  background: url(../img/about/prev.png) no-repeat left center;
-}
-
-#about_banner .flex-direction-nav a.flex-next {
-  background: url(../img/about/next.png) no-repeat left center;
 }
