@@ -1,5 +1,5 @@
 from flask import Blueprint, render_template, redirect, url_for, request
-from app.models import User
+from app.models import User, Announcement
 
 main = Blueprint('main', __name__)
 
@@ -7,7 +7,8 @@ main = Blueprint('main', __name__)
 
 @main.route('/home', methods=['GET', 'POST'])
 def home(cat=None):
-    return render_template('home.html',  title='Home')
+    announcements = Announcement.query.order_by(Announcement.created_at).all()
+    return render_template('home.html',  title='Home', announcements=announcements)
 
 @main.route('/contact', methods=['GET', 'POST'])
 def contact(cat=None):
@@ -36,6 +37,10 @@ def terms(cat=None):
 @main.route('/policy', methods=['GET', 'POST'])
 def policy(cat=None):
     return render_template('legal/policy.html',  title='Privacy Policy')
+
+@main.route('/admin', methods=['GET', 'POST'])
+def admin(cat=None):
+    return render_template('admin/admin.html',  title='Admin')
 
 """@app.route("/details/<int:pet_id>")
 def pet_details(pet_id):
